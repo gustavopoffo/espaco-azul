@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Azul - Página Inicial</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/doacao.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/sobre.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -19,14 +19,14 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-     </script>
-     <header role="banner">
+    </script>
+    <header role="banner">
         <nav class="navbar navbar-expand-lg navbar-light contraste">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html"><img src="./img/logo.png" alt="Logo Espaço Azul" style="max-width: 150px; max-height: 150px;"></a>
@@ -38,8 +38,8 @@
                         <li class="nav-item" role="none">
                             <a class="nav-link" role="menuitem" href="home.html">PÁGINA INICIAL</a>
                         </li>
-                        <li class="nav-item" role="none">
-                            <a class="nav-link" role="menuitem" href="sobre.html">SOBRE</a>
+                        <li class="nav-item">
+                            <a class="nav-link" role="menuitem" aria-current="page" href="sobre.html">SOBRE</a>
                         </li>
                         <li class="nav-item" role="none">
                             <a class="nav-link" role="menuitem" href="beneficios.html">DIREITOS</a>
@@ -47,8 +47,8 @@
                         <li class="nav-item" role="none">
                             <a class="nav-link" role="menuitem" href="noticias.html">BLOG</a>
                         </li>
-                        <li class="selected" class="nav-item">
-                            <a class="nav-link" role="menuitem" aria-current="page" href="doacao.html">DOAÇÃO</a>
+                        <li class="selected" class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="doacao.html">DOAÇÃO</a>
                         </li>
                         <li class="nav-item" role="none">
                             <a class="nav-link" role="menuitem" href="contato.html">CONTATO</a>
@@ -73,119 +73,97 @@
             <a href="https://wa.me/551633716200" target="_blank">
                 <img alt="simbolo whatsapp" src="./img/zap.png" class="img-right-zap">
             </a>
+
+            <img src="./img/doacaoo.png" alt="Mulher doando alimentos" class="sobre1">
         </div>
-        <img src="img/doacaoImg.png" alt="criança segurando coração de peças" class="img-doacao">
-
-        <div class="container-md">
-
-            <h2 class="fw-bold text-center">FAÇA UMA DOAÇÃO E AJUDE A AMPLIAR O PROJETO!</h2>
-            <div class="container">
-                <p class="text-center">Seu apoio é essencial para a continuação desse trabalho!</p>
-                <br>
-            </div>         
-
-            <section id="conteudoMeio">
-                <div class="imagem1">
-                    <img src="img/pixR.jpg" alt="Logotipo Pix">
-                    <br>
-                    <ul>
-                        <li><strong>CNPJ: </strong>18.443.436/0001.10</li>
-                    </ul>
-                </div>
-                <div class="imagem2"><img src="img/qrCode.png" alt="Imagem QR Code para chave pix"></div>
-                <div class="imagem3">
-                    <ul>
-                        <li id="conta">Conta bancária</li>
-                        <li><strong>Banco:</strong> Banco do Brasil</li>
-                        <li><strong>Conta:</strong> 0295-X</li>
-                        <li><strong>Agência:</strong> 79584-4</li>
-                    </ul>
-                </div>
-            </section>
-            <br>
-            <hr>
-            <h2 class="titulo-centralizado"><strong>DOAÇÃO COM NOTA FISCAL PAULISTA</strong></h2>
-
-            <p class="recuo-paragrafo">A dedução das doações contribui para reduzir o valor do imposto de renda que o contribuinte
-            deve pagar ao governo. Portanto, ao doar para uma organização como o Espaço Azul, o contribuinte 
-            pode reduzir sua carga tributária.</p>
-            
-            <div class="passo-passo">
-                <ol>
-                    <li>1. Cadastre o seu CPF e faça o login no programa <a href="https://portal.fazenda.sp.gov.br/servicos/nfp/"><strong>Nota Fiscal Paulista</strong></a></li>
-                        <br>
-                    <li>2. Selecione a opção <strong>Doação Automática com CPF</strong>.</li>
-                        <br>
-                    <li>3. Escolha para qual <strong>instituição</strong> será destinado o dinheiro e por quanto <strong>tempo</strong> deseja contribuir.</li>
-                </ol>
-                <div class="float-beneficios-img">
-                    <div class="float-right-img">
-                        <img src="./img/nota-fiscal.png" alt="certificado de nota fiscal" style="max-width: 250px; max-height: 250px;" class="imagem-centralizada">
-                    </div>
-                </div>
-            </div>
-            <h2><strong>POR QUE CONTRIBUIR?</strong></h2>
-            <br>
-
-            <p>Contribuir com a ONG Espaço Azul, que se dedica ao cuidado de crianças e adolescentes autistas
-            é mais do que um ato de generosidade, é um <strong>investimento no bem-estar e no futuro desses jovens</strong>.
-            Ao apoiar uma organização desse tipo, estamos oferecendo oportunidades para que eles desenvolvam 
-            todo o seu potencial e alcancem uma vida plena e feliz.</p>
-
-            <p class="recuo-paragrafo">Além disso, pessoas físicas que optam pelo modelo completo de declaração do imposto 
-            de renda podem deduzir as doações feitas a entidades beneficentes do imposto devido. 
-            O limite de dedução é de <strong>é 6% do imposto devido</strong>, calculado antes da dedução das doações.</p>
-            
-            <div class="passo-passo">
-                <ol>
-                    <li>1. <strong>Baixe e instale o programa da Receita Federal</strong> e entre na parte de <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda">Imposto de Renda</a> no seu dispositivo.</li>
-                        <br>
-                    <li>2. Acesse a ficha doações diretamente na declaração no menu do lado esquerdo da tela
-                    e clique em "Novo"</li>
-                        <br>
-                    <li>3. Selecione o tipo de fundo, que pode ser “Nacional”, “Estadual” ou “Municipal”.</li>
-                        <br>
-                    <li>4. Em seguida, preencha o valor desejado para a doação e clique em “OK” para concluir o preenchimento da ficha.</li>
-                        <br>
-                    <li>5. Após isso, é necessário emitir os Documentos de Arrecadação Federal (DARFS) específicos.</li>
-                        <br>
-                    <li>6. Por fim, informe à instituição escolhida que você realizou uma doação no Imposto de Renda.</li>
-                </ol>
-            </div>
-        <br>
-    </div>
-    </main>
-        <footer>
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row gy-5 justify-content-evenly">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="line"></div>
-                            <ul class="social-icons">
-                                <li><img src="./img/email.png" alt="Ícone de e-mail" style="max-width: 40px; max-height: 40px;"> ongespacoazul@gmail.com</li>
-                                <li><img src="./img/telefone.png" alt="Ícone de telefone" style="max-width: 40px; max-height: 40px;"> +55 (16) 3371-6200</li>
-                                <li><a href="https://www.instagram.com/espacoazulsaocarlos/" target="_blank"><img src="./img/insta.png" alt="Ícone do Instagram" style="max-width: 40px; max-height: 40px;"></a> @espacoazulsaocarlos</li>
-                                <li><a href="https://maps.app.goo.gl/dX9S6YjQ4GaQ6GfM8" target="_blank"><img src="./img/localizacao.png" alt="Ícone de localização" style="max-width: 40px; max-height: 40px;"></a> R. Nove de Julho, 2595, Jd. Luftalla. São Carlos</li>
-                            </ul>
-                        </div>                    
-                        <div class="col-lg-4 col-sm-6">
-                            <a href="#"><img src="./img/logo2.png" alt="Logotipo do Espaço Azul" style="max-width: 200px; max-height: 200px;"></a>
+        <section class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                
+                <!-- Card 1: Doe via PIX -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./img/pixR.png" class="card-img-top" alt="Doe via PIX" style="max-width: 250px; max-height: 250px;">
+                            <p class="card-text text-center">Faça sua doação de forma rápida e segura usando PIX.</p>
                         </div>
-                        <div class="col-lg-4 col-sm-6 text-center"> 
-
-                            <p class="justified">Somos uma Organização da Sociedade Civil sem fins lucrativos, que atua 
-                            oferecendo acolhimento às famílias de pessoas autistas e tratamento para as pessoas autistas 
-                            proporcionando desenvolvimento de habilidades e autonomia.</p>
-
-                            <p class="centered mb-0">Confira nossa <a href="" class="contrast">Política de Privacidade.</a></p>
-                        </div>          
+                        <div class="card-footer">
+                            <a href="doacaoPix.html" class="btn btn-primary"><strong>DOAR VIA PIX</strong></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 2: Doe via Depósito -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./img/banco-brasil.png" class="card-img-top" alt="Doe via Depósito" style="max-width: 100px; max-height: 100px;">
+                            <p class="card-text text-center">Contribua com nossa causa através de depósito bancário.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="doacaoDeposito.html" class="btn btn-primary"><strong>DOAR VIA DEPÓSITO</strong></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3: Doe via Imposto de Renda -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./img/receita-federal.png" class="card-img-top" alt="Doe via Imposto de Renda" style="max-width: 150px; max-height: 150px;">
+                            <p class="card-text text-center">Use parte do seu imposto de renda para fazer a diferença.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="doacaoIR.html" class="btn btn-primary"><strong>DOAR VIA IR</strong></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 4: Doação via Nota Fiscal -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="./img/nota-fiscal.png" class="card-img-top" alt="Doação via Nota Fiscal" style="max-width: 150px; max-height: 150px;">
+                            <p class="card-text text-center">Apoie-nos doando parte do valor de suas notas fiscais.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="doacaoNotaFiscal.html" class="btn btn-primary"><strong>DOAR VIA NOTA FISCAL</strong></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="mb-0">&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>      
+        </section>        
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5 justify-content-evenly">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="line"></div>
+                        <ul class="social-icons">
+                            <li><img src="./img/email.png" alt="Ícone de e-mail" style="max-width: 40px; max-height: 40px;"> ongespacoazul@gmail.com</li>
+                            <li><img src="./img/telefone.png" alt="Ícone de telefone" style="max-width: 40px; max-height: 40px;"> +55 (16) 3371-6200</li>
+                            <li><a href="https://www.instagram.com/espacoazulsaocarlos/" target="_blank"><img src="./img/insta.png" alt="Ícone do Instagram" style="max-width: 40px; max-height: 40px;"></a> @espacoazulsaocarlos</li>
+                            <li><a href="https://maps.app.goo.gl/dX9S6YjQ4GaQ6GfM8" target="_blank"><img src="./img/localizacao.png" alt="Ícone de localização" style="max-width: 40px; max-height: 40px;"></a> R. Nove de Julho, 2595, Jd. Luftalla. São Carlos</li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#"><img src="./img/logo2.png" alt="Logotipo do Espaço Azul" style="max-width: 200px; max-height: 200px;"></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center">
+
+                        <p class="justified">Somos uma Organização da Sociedade Civil sem fins lucrativos, que atua 
+                        oferecendo acolhimento às famílias de pessoas autistas e tratamento para as pessoas autistas 
+                        proporcionando desenvolvimento de habilidades e autonomia.</p>
+                                                
+                        <p class="centered mb-0">Confira nossa <a href="" class="contrast">Política de Privacidade.</a></p>
+                    </div>          
+                </div>
             </div>
-        </footer>
+        </div>
+        <div class="footer-bottom">
+            <p class="mb-0">&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>      
+        </div>
+    </footer>   
     <script src="./js/contraste.js"></script>
     <script src="./js/botao-fonte.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
