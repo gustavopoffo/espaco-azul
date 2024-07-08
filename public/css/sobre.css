@@ -7,6 +7,23 @@ img{
     overflow: hidden;
     object-fit: cover;
 }
+.step-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.step-p{
+    width: 20rem;
+}
+
+.step1-img{
+    overflow: hidden;
+    margin-left: 3rem;
+    object-fit: cover;
+    width: 30rem;
+}
 
 .left-align {
     text-align: left;
