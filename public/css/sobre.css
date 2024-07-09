@@ -14,8 +14,14 @@ img{
     padding-top: 2rem;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
 .step-p{
     width: 20rem;
+    color:black;
 }
 
 .step1-img{
