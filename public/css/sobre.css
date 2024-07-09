@@ -20,7 +20,6 @@ img{
 
 .step1-img{
     overflow: hidden;
-    margin-left: 3rem;
     object-fit: cover;
     width: 30rem;
 }
