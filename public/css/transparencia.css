@@ -150,3 +150,47 @@ footer {
 .centered {
     text-align: center;
 }
+
+/* Estilos para o container principal do Accordion */
+.accordion {
+    border: 1px solid #dee2e6; /* Borda cinza clara */
+    border-radius: 0.25rem; /* Borda arredondada */
+}
+
+/* Estilos para o cabeçalho de cada item do Accordion */
+.accordion-header {
+    background-color: #f8f9fa; /* Cor de fundo cinza claro para o cabeçalho */
+    padding: 0.5rem 1.25rem; /* Espaçamento interno */
+}
+
+/* Estilos para o botão que expande e contrai o Accordion */
+.accordion-button {
+    background-color: #e9ecef; /* Cor de fundo mais escura para o botão */
+    color: #495057; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo para o botão quando está colapsado */
+.accordion-button.collapsed {
+    background-color: #f8f9fa; /* Cor de fundo mais clara quando colapsado */
+    color: #343a40; /* Cor do texto mais escura */
+}
+
+/* Estilos para o corpo de cada item do Accordion */
+.accordion-body {
+    background-color: #ffffff; /* Cor de fundo branca para o corpo */
+    color: #212529; /* Cor do texto preto */
+    padding: 1rem; /* Espaçamento interno */
+    border-top: 1px solid #dee2e6; /* Borda superior cinza clara */
+}
+
+/* Estilos adicionais para hover */
+.accordion-button:not(.collapsed) {
+    color: #0056b3; /* Muda a cor do texto ao expandir */
+    background-color: #e9ecef; /* Mantém a cor de fundo ao expandir */
+}
+
+.accordion-button:not(.collapsed):hover {
+    background-color: #dce4ec; /* Cor de fundo ao passar o mouse */
+}
