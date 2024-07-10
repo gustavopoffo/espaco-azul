@@ -215,30 +215,33 @@ a.contrast {
 }
 
 .carousel-item img {
-    max-width: 100%;
-    max-height: 300px; 
-    object-fit: contain;
-    margin-bottom: 100px;
+    max-width: 100%; 
+    max-height: 400px; 
+    object-fit: contain; 
+    margin-bottom: 20px; 
 }
 
 .carousel {
-    max-width: 300px;
-    margin: auto;
+    width: 400px;
+    height: 400px; 
+    margin: auto; 
 }
 
 .carousel-item .card {
-    margin: 20px;
+    margin: 5px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
 }
 
+.carousel-control-prev,
+.carousel-control-next,
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #007bff;
-    border-radius: 50%;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #0056b3;
+    display: none;
 }
 
 .card {

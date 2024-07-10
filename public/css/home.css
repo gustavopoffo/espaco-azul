@@ -73,3 +73,19 @@ h2 {
     background-color: #3F3333;
     font-size: 18pt;
 }
+
+.img-depoimentos {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.carousel-indicators button {
+    background-color: #000; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+}
