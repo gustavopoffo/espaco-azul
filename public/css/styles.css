@@ -144,7 +144,7 @@ img {
 .img-right-zap {
     position: fixed;
     right: 0;
-    bottom: 10px; /* Adicione isso para posicionar a imagem verticalmente */
+    bottom: 10px;
     padding-bottom: 10px; 
     max-width: 100px;
     max-height: 100px;
