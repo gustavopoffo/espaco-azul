@@ -89,26 +89,39 @@
         <section role="region" aria-labelledby="work-with-us-heading">
             <h2 id="work-with-us-heading" class="text-center"><strong>TRABALHE CONOSCO</strong></h2>
             <p class="text-center">Tem interesse em fazer parte da ONG? Estamos aqui para ajudar! Preencha o formulário abaixo para entrar em contato conosco.</p>
-            <form action="/contact" method="post" class="row" enctype="multipart/form-data" aria-labelledby="work-with-us-heading">
+            <form action="/send-message" method="post" class="row" enctype="multipart/form-data" aria-labelledby="work-with-us-heading">
                 <div class="col-md-6 mb-3">
-                  <label for="name" class="form-label"><strong>NOME</strong></label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+                    <label for="name" class="form-label"><strong>NOME</strong></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="email" class="form-label"><strong>EMAIL</strong></label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+                    <label for="email" class="form-label"><strong>EMAIL</strong></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
                 </div>
                 <div class="col-md-12 mb-3">
-                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
-                </div>
-                <div class="col-md-12 mb-3">
-                  <h5 class="fw-bold">ENVIAR CURRÍCULO</h5>
-                  <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required aria-label="Enviar currículo em formato PDF ou Word">
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary"><strong>ENVIAR</strong></button>
+                    <button type="submit" class="btn btn-primary"><strong>ENVIAR</strong></button>
                 </div>
-              </form>              
+            </form>
+            <form action="/send-resume" method="post" class="row" enctype="multipart/form-data" aria-labelledby="work-with-us-heading">
+                <div class="col-md-6 mb-3">
+                    <label for="name-resume" class="form-label"><strong>NOME</strong></label>
+                    <input type="text" class="form-control" id="name-resume" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="email-resume" class="form-label"><strong>EMAIL</strong></label>
+                    <input type="email" class="form-control" id="email-resume" name="email" placeholder="Seu email" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <h5 class="fw-bold">ENVIAR CURRÍCULO</h5>
+                    <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required aria-label="Enviar currículo em formato PDF ou Word">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary"><strong>ENVIAR</strong></button>
+                </div>
+            </form>                             
             <br>
         </section>
     </main>

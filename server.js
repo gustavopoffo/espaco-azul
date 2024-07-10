@@ -1,10 +1,12 @@
 const express = require('express');
-const session = require('express-session')
+const session = require('express-session');
 const bodyParser = require('body-parser');
 const path = require('path');
 const multer = require('multer');
 const authRoutes = require('./routes/auth');
 const newsController = require('./controllers/newsController');
+const transporter = require('./controllers/emailer');
+
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -13,29 +15,33 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Configurar o armazenamento de arquivos com Multer
+// Configuração do armazenamento de arquivos com Multer
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'uploads/');
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname));
-  }
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
 });
-
 const upload = multer({ storage: storage });
 
-// Servir arquivos estáticos, como a página de login
+// Servir arquivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Sessões para login
 const sessionSecret = process.env.SECRET || 'espaço-blue';
-app.use(session({secret: sessionSecret, resave: false, name:'session', saveUninitialized:false}))
+app.use(session({
+    secret: sessionSecret, 
+    resave: false, 
+    saveUninitialized: false,
+    name: 'session'
+}));
 
 // Usar as rotas de autenticação
 app.use('/auth', authRoutes);
 
-// Rota para servir a página de login
+// Rota para servir a página de login e outras páginas
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/login.html'));
 });
@@ -46,7 +52,6 @@ app.get('/', (req, res) => {
 
 app.get('/news', newsController.getNews);
 app.get('/news/:id', newsController.fetchNewsById);
-
 app.post('/news', newsController.putNews);
 
 app.get('/noticia', (req, res) => {
@@ -54,38 +59,53 @@ app.get('/noticia', (req, res) => {
 });
 
 app.get('/logout', (req, res) => {
-    req.session.loggedIn = false;
-    req.session.save(function (err) {
-        if (err) next(err)
-
-        // regenerate the session, which is good practice to help
-        // guard against forms of session fixation
-        req.session.regenerate(function (err) {
-            if (err) next(err)
-            res.redirect('/')
-        })
-    })
+    req.session.destroy(function (err) {
+        if (err) {
+            return next(err);
+        }
+        res.redirect('/');
+    });
 });
 
 app.get('/loggedin', (req, res) => {
-    res.status(200).json({ message: req.session.loggedIn ? "Sim" : "Não"});
+    res.status(200).json({ message: req.session.loggedIn ? "Sim" : "Não" });
 });
 
-// Rota para adicionar um documento
-app.post('/api/documentos', upload.single('documents'), async (req, res) => {
-    if(!req.session.loggedIn){
-        res.status(403).json({ message: "Não autorizado" });
-        return;
-    }
-    const { descricao } = req.body;
-    const titulo = req.file.filename;
+// Rotas para enviar currículos e mensagens
+app.post('/send-resume', upload.single('resume'), (req, res) => {
+    const mailOptions = {
+        from: process.env.EMAIL_USER,
+        to: 'vagasongespacoazul@gmail.com',
+        subject: 'Novo Currículo',
+        text: `Recebido um novo currículo de ${req.body.name}.`,
+        attachments: [{
+            filename: req.file.originalname,
+            path: req.file.path
+        }]
+    };
 
-    try {
-        await db.run('INSERT INTO documents (title, description) VALUES (?, ?)', [titulo, descricao]);
-        res.status(201).json({ message: 'Documento adicionado com sucesso!' });
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return res.status(500).send(error.toString());
+        }
+        res.send('Currículo enviado com sucesso!');
+    });
+});
+
+app.post('/send-message', (req, res) => {
+    const mailOptions = {
+        from: req.body.email,
+        to: 'ongespacoazul@gmail.com',
+        subject: `Mensagem de ${req.body.name}`,
+        text: req.body.message
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return res.status(500).send(error.toString());
+        }
+        res.send('Mensagem enviada com sucesso!');
+    });
 });
 
 // Iniciar o servidor
