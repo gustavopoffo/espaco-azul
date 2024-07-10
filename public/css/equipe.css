@@ -59,7 +59,7 @@ div > h2{
     font-size: 1.5rem;
     width: 50%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .profile-social-midia {
