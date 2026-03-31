@@ -41,6 +41,9 @@ O projeto Espaço Azul foi desenvolvido utilizando as seguintes tecnologias:
 - Executar o comando: npm start
 - Abrir um navegador e digitar: http://localhost:3000/
 
+## Acesse o Site
+- Clique aqui: [https://espaco-azul-1s.onrender.com](https://espaco-azul-1s.onrender.com)
+
 ## Como Logar o Usuário
 - usuário: admin
 - senha: dev_teste
