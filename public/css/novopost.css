@@ -1,0 +1,31 @@
+.intro-noticia {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.btn-enviar-not{
+    width: 10%;
+}
+
+.conjunto{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .text{
+    text-align: left;
+}
+
+div .form-control{
+    width: 50%;
+    margin-bottom: 2rem;
+}

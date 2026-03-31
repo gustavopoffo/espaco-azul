@@ -1,0 +1,196 @@
+.background {
+    background-color: #F5F5F5;
+    min-height: 70rem;
+}
+
+.titulo-transparencia {
+    margin-top: 9rem;
+    margin-bottom: 1.5rem;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table a:hover {
+    color: #515151;
+    text-decoration: none;
+}
+
+.section-heading2 {
+    margin-bottom: 15px;
+}
+
+.section-heading2 h4 {
+    font-weight: bold;
+}
+
+.list-group {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 3px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #515151;
+    border: 3px solid rgba(0, 0, 0, 0.125);
+    color: #333;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.list-group a {
+    color: #505050;
+    text-decoration: none;
+}
+
+.list-group a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #2E3B69;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 0px 0;
+    margin: 0 auto;
+}
+
+.social-icons {
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.float-left,
+.float-right {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.float-right {
+    text-align: right;
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+.image-container img {
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
+    margin-right: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Estilos para o container principal do Accordion */
+.accordion {
+    border: 1px solid #dee2e6; /* Borda cinza clara */
+    border-radius: 0.25rem; /* Borda arredondada */
+}
+
+/* Estilos para o cabeçalho de cada item do Accordion */
+.accordion-header {
+    background-color: #f8f9fa; /* Cor de fundo cinza claro para o cabeçalho */
+    padding: 0.5rem 1.25rem; /* Espaçamento interno */
+}
+
+/* Estilos para o botão que expande e contrai o Accordion */
+.accordion-button {
+    background-color: #e9ecef; /* Cor de fundo mais escura para o botão */
+    color: #495057; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo para o botão quando está colapsado */
+.accordion-button.collapsed {
+    background-color: #f8f9fa; /* Cor de fundo mais clara quando colapsado */
+    color: #343a40; /* Cor do texto mais escura */
+}
+
+/* Estilos para o corpo de cada item do Accordion */
+.accordion-body {
+    background-color: #ffffff; /* Cor de fundo branca para o corpo */
+    color: #212529; /* Cor do texto preto */
+    padding: 1rem; /* Espaçamento interno */
+    border-top: 1px solid #dee2e6; /* Borda superior cinza clara */
+}
+
+/* Estilos adicionais para hover */
+.accordion-button:not(.collapsed) {
+    color: #0056b3; /* Muda a cor do texto ao expandir */
+    background-color: #e9ecef; /* Mantém a cor de fundo ao expandir */
+}
+
+.accordion-button:not(.collapsed):hover {
+    background-color: #dce4ec; /* Cor de fundo ao passar o mouse */
+}

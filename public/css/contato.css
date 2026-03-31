@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato {
+    text-align: justify;
+    background-color: #F5F5F5;
+    padding: 20px;
+    margin-bottom:10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

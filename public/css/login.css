@@ -1,0 +1,112 @@
+.login-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    max-width: 300px;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3.5rem;
+}
+
+.login-form {
+    width: 25rem;
+    height: 22rem;
+    padding: 20px;
+    background: #B2CEEF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 200px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.login-form input[type="submit"] {
+    width: calc(100% - 40px);
+    padding: 10px 0;
+    background-color: #3F3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.social-icons{
+    padding-top: 50px;
+}
+
+.social-icons li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.wrapper {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.centered {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .disFlex {
+      display: flex;
+      justify-content: center;
+    }
+
+    div .simbolo{
+        width: 16rem;
+        height: 20rem;
+        object-fit:contain;
+    }
+    
+    div .espacoAzul{
+        width: 30rem;
+        height: 20rem;
+        padding-left: 2rem;
+        object-fit:contain;
+    }
+  }
+
+@media (max-width: 992px) {
+    div .simbolo{
+        display: none;
+    }
+    
+    div .espacoAzul{
+        display: none;
+    }
+}

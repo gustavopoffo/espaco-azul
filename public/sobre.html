@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Azul</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div id="floating-buttons">
+        <button id="increase-font" aria-label="Aumentar tamanho da fonte"><strong>+</strong></button>
+        <button id="decrease-font" aria-label="Diminuir tamanho da fonte"><strong>-</strong></button>
+        <button id="contrast" class="contraste" aria-pressed="false" onclick="highContrast()">
+            <img alt="botao-contraste" src="./img/botao-contraste.png" style="max-width: 25px; max-height: 25px;">
+        </button>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light contraste">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="./img/logo.png" alt="Logo Espaço Azul" style="max-width: 150px; max-height: 150px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="home.html">PÁGINA INICIAL</a>
+                        </li>
+                        <li class="selected" class="nav-item">
+                            <a class="nav-link" role="menuitem" aria-current="page" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="beneficios.html">DIREITOS</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="noticias.html">BLOG</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="doacao.html">DOAÇÃO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="contato.html">CONTATO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="transparencia.html">TRANSPARÊNCIA</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="inscricao.html">INSCRIÇÃO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="equipe.html">EQUIPE</a>
+                        </li>
+                    </ul>
+                    <button class="login-botao" aria-label="Login"><a href="login.html"><strong>ENTRAR</strong></a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <a href="https://wa.me/551633716200" target="_blank">
+                <img alt="simbolo whatsapp" src="./img/zap.png" class="img-right-zap">
+            </a>
+        </div>
+        <section>
+            <img src="./img/sobre1.png" alt="Mulher e crianças desenhando" class="sobre1">
+
+            <div class="container-md d-grid">                
+                <div class="row">
+                    <div class="col">
+                        <h1>Nossa História</h1>
+                        <br> 
+                        <div class="process-wrapper">
+                        <div id="progress-bar-container">
+                            <ul>
+                                <li class="step step01 active"><div class="step-inner">ORIGEM</div></li>
+                                <li class="step step02"><div class="step-inner">ABORDAGEM</div></li>
+                                <li class="step step03"><div class="step-inner">EQUIPE</div></li>
+                                <li class="step step04"><div class="step-inner">COMUNIDADE</div></li>
+                                <li class="step step05"><div class="step-inner">CRESCIMENTO</div></li>
+                            </ul>
+                            
+                            <div id="line">
+                                <div id="line-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <div id="progress-content-section">
+                            <div class="section-content discovery active">
+                                <h2>ORIGEM</h2>
+                                <div class="step-div row">
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <p class="step-p">A Associação de Apoio a Pais e Autistas, conhecida como Espaço Azul, foi oficialmente fundada em 2013. Contudo, sua trajetória começou antes, quando um grupo de mães se reuniu em busca de apoio e troca de informações sobre o Transtorno do Espectro Autista (TEA). Motivadas pelo desejo de criar um ambiente acolhedor e terapêutico para seus filhos, elas iniciaram o que viria a se tornar a ONG Espaço Azul.</p>
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <img src="./img/julho4.png" alt="Membros da ONG" class="step1-img">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-content strategy">
+                                <h2>ABORDAGEM</h2>
+                                <div class="step-div row">
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <p class="step-p">A ONG Espaço Azul oferece tratamento individualizado e especializado, focado na Análise do Comportamento Aplicada. Este método terapêutico, amplamente reconhecido por sua eficácia, auxilia no desenvolvimento de habilidades sociais, de comunicação e comportamentais em crianças com TEA.</p>
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <img src="./img/vila5.jpeg" alt="Membros da ONG e crianças em uma roda de conversa e brincadeira" class="step1-img">]
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-content creative">
+                                <h2>EQUIPE</h2>
+                                <div class="step-div row">
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <p class="step-p">Com uma equipe composta por psicólogos, terapeutas ocupacionais, fonoaudiólogos, pedagogos e psicopedagogos, a ONG Espaço Azul proporciona um tratamento multidisciplinar que abrange todas as áreas do desenvolvimento. O objetivo é promover a independência e melhorar a interação social e comunicativa das pessoas com TEA.</p>
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <img src="./img/julho1.jpeg" alt="Membros da ONG" class="step1-img">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-content production">
+                                <h2>COMUNIDADE</h2>
+                                <div class="step-div row">
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <img src="./img/casarao3.jpeg" alt="Membros da ONG e visitante conversando" class="step1-img">
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <p class="step-p">Desde sua criação, a ONG Espaço Azul tem desempenhado um papel vital na comunidade de São Carlos, oferecendo suporte, orientação e tratamento de qualidade para crianças autistas e suas famílias. Com uma abordagem centrada no indivíduo e uma equipe dedicada, a ONG tem ajudado crianças e adolescentes com TEA a desenvolver seu potencial máximo e a se integrarem plenamente na sociedade.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section-content analysis">
+                                <h2>CRESCIMENTO</h2>
+                                <div class="step-div row">
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <img src="./img/vila6.jpeg" alt="crianças brincando" class="step1-img">
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-center">
+                                        <p class="step-p">Ao longo dos anos, a ONG Espaço Azul tem alcançado importantes conquistas, incluindo a implementação de leis que beneficiam pessoas com TEA e o apoio crescente da comunidade e das autoridades locais. Atualmente, a ONG atende gratuitamente quase 150 pessoas, melhorando a qualidade de vida das pessoas com TEA e de seus familiares.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Ao longo dos anos, a ONG Espaço Azul cresceu e ajudou na conquista de beneficios importantes para a comunidade:</p>
+                <ul>
+                    <li class="left-align"><strong>1. Lei 17083/14- 2 de abril de 2014</strong> - a lei do diagnóstico na educação;</li>
+                    <li class="left-align"><strong>2. Lei 16069/2012</strong> - A inclusão no calendário municipal o dia de conscientização do autismo;</li>
+                    <li class="left-align"><strong>3. Lei 17814/2016</strong> - A lei para incluir nas placas de atendimento preferencial no comércio e bancos o símbolo do autismo.</li>
+                </ul>
+                
+                <p>Além das leis, a ONG Espaço Azul teve algumas sedes em São Carlos, espaços e conquistados por meio do <strong>apoio da Secretaria Municipal de São Carlos</strong>, além de vereadores e
+                empresários que tornaram o sonho do atendimento especializado possível. Hoje a ONG Espaço Azul atende quase <strong>150 pessoas de forma gratuita</strong> 
+                e possibilita que tanto a pessoa com TEA como seu familiar possa ter mais qualidade de vida.</p>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5><strong>SEDE DO CASARÃO</strong></h5>
+                            <div id="carouselParceiros1" class="carousel slide" data-bs-ride="carousel" role="listbox">
+                                <div class="carousel-indicators">
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="1" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="2" aria-label="Foto 2"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="3" aria-label="Foto 3"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="4" aria-label="Foto 4"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros1" data-bs-slide-to="5" aria-label="Foto 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/casarao1.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/casarao2.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/casarao3.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/casarao4.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/casarao5.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/casarao6.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                </div>
+                                <button aria-controls="carousel" class="carousel-control-prev" type="button" data-bs-target="#carouselParceiros1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button aria-controls="carousel" class="carousel-control-next" type="button" data-bs-target="#carouselParceiros1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-4">
+                            <h5><strong>SEDE VILA PRADO</strong></h5>
+                            <div id="carouselParceiros2" class="carousel slide" data-bs-ride="carousel" role="listbox">
+                                <div class="carousel-indicators">
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="1" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="2" aria-label="Foto 2"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="3" aria-label="Foto 3"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="4" aria-label="Foto 4"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros2" data-bs-slide-to="5" aria-label="Foto 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/vila1.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/vila2.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/vila3.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/vila4.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/vila5.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/vila6.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                </div>
+                                <button aria-controls="carousel" class="carousel-control-prev" type="button" data-bs-target="#carouselParceiros2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button aria-controls="carousel" class="carousel-control-next" type="button" data-bs-target="#carouselParceiros2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-4">
+                            <h5><strong>SEDE 9 DE JULHO</strong></h5>
+                            <div id="carouselParceiros3" class="carousel slide" data-bs-ride="carousel" role="listbox">
+                                <div class="carousel-indicators">
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="1" aria-label="Foto 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="2" aria-label="Foto 2"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="3" aria-label="Foto 3"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="4" aria-label="Foto 4"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros3" data-bs-slide-to="5" aria-label="Foto 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/julho1.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/julho2.jpg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/julho3.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/julho4.png" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/julho5.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/julho6.jpeg" style="max-height: 300px; object-fit: contain;" alt="Foto casarão">
+                                    </div>
+                                </div>
+                                <button aria-controls="carousel" class="carousel-control-prev" type="button" data-bs-target="#carouselParceiros3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button aria-controls="carousel" class="carousel-control-next" type="button" data-bs-target="#carouselParceiros3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                          
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5 justify-content-evenly">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="line"></div>
+                        <ul class="social-icons">
+                            <li><img src="./img/email.png" alt="Ícone de e-mail" style="max-width: 40px; max-height: 40px;"> ongespacoazul@gmail.com</li>
+                            <li><img src="./img/telefone.png" alt="Ícone de telefone" style="max-width: 40px; max-height: 40px;"> +55 (16) 3371-6200</li>
+                            <li><a href="https://www.instagram.com/espacoazulsaocarlos/" target="_blank"><img src="./img/insta.png" alt="Ícone do Instagram" style="max-width: 40px; max-height: 40px;"></a> @espacoazulsaocarlos</li>
+                            <li><a href="https://maps.app.goo.gl/dX9S6YjQ4GaQ6GfM8" target="_blank"><img src="./img/localizacao.png" alt="Ícone de localização" style="max-width: 40px; max-height: 40px;"></a>R. Nove de Julho, 2595, Jd. Luftalla. São Carlos</li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#"><img src="./img/logo2.png" alt="Logotipo do Espaço Azul" style="max-width: 200px; max-height: 200px;"></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center">
+
+                        <p class="justified">Somos uma Organização da Sociedade Civil sem fins lucrativos, que atua 
+                        oferecendo acolhimento às famílias de pessoas autistas e tratamento para as pessoas autistas 
+                        proporcionando desenvolvimento de habilidades e autonomia.</p>
+                                                
+                        <p class="centered mb-0">Confira nossa <a href="" class="contrast">Política de Privacidade.</a></p>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="mb-0">&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>      
+        </div>
+    </footer>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./js/progressBar.js"></script>
+    <script src="./js/contraste.js"></script>
+    <script src="./js/botao-fonte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

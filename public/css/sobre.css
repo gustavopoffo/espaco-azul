@@ -1,0 +1,35 @@
+.sobre1 {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+img{
+    overflow: hidden;
+    object-fit: cover;
+}
+.step-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.step-p{
+    width: 20rem;
+    color:black;
+}
+
+.step1-img{
+    overflow: hidden;
+    object-fit: cover;
+    width: 30rem;
+}
+
+.left-align {
+    text-align: left;
+}

@@ -1,0 +1,40 @@
+.novopost {
+    display:block;
+    margin: 0 auto;
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+    border: 0;
+    background-color: #3F3333;
+    font-size: 18pt;
+}
+
+.novopost a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-noticia{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+div .card{
+    height: 100%;
+    width: 100%;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover; 
+}
+
+.card-body{
+    width: 100%;
+}
+
+
+.intro-noticia {
+    margin-top: 30px;
+}

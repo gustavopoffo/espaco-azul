@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Azul</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div id="floating-buttons" role="toolbar" aria-label="Opções de acessibilidade">
+        <button id="increase-font" aria-label="Aumentar tamanho da fonte"><strong>+</strong></button>
+        <button id="decrease-font" aria-label="Diminuir tamanho da fonte"><strong>-</strong></button>
+        <button id="contrast" aria-label="Increase font size" class="contraste" aria-pressed="false" onclick="highContrast()">
+            <img alt="Botão contraste" src="./img/botao-contraste.png" style="max-width: 25px; max-height: 25px;">
+        </button>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+     </script>
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-light contraste">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="./img/logo.png" alt="Logo Espaço Azul" style="max-width: 150px; max-height: 150px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li aria class="selected" class="nav-item">
+                            <a class="nav-link" role="menuitem" aria-current="page" href="home.html">PÁGINA INICIAL</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="beneficios.html">DIREITOS</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="noticias.html">BLOG</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="doacao.html">DOAÇÃO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="contato.html">CONTATO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="transparencia.html">TRANSPARÊNCIA</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="inscricao.html">INSCRIÇÃO</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" role="menuitem" href="equipe.html">EQUIPE</a>
+                        </li>
+                    </ul>
+                    <button class="login-botao" aria-label="Login"><a href="login.html"><strong>ENTRAR</strong></a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <main>
+        <div>
+            <a href="https://wa.me/551633716200" target="_blank">
+                <img alt="simbolo whatsapp" src="./img/zap.png" class="img-right-zap">
+            </a>
+        </div>
+        <img alt="Professora e uma criança felizes" class="img-fluid" src="./img/home.png">
+        <section class="container">
+            <h2><strong>BEM-VINDO AO ESPAÇO AZUL!</strong></h2>
+
+            <p class="text-center">O Espaço Azul é uma ONG de São Carlos que atua na área de cuidados com pessoas autistas, 
+            especialmente com crianças e adolescentes e também oferta atendimento psicológico para familiares de autistas, autistas 
+            adultos e grupo de escuta para familiares de autistas e interessados.</p>
+            <img src="./img/Nuvens.png" style="width: 100%;" alt="Nuvens com os escritos: Empatia, Respeito, Ética, Transparência, Diversidade e Responsabilidade">
+
+            <p></p>
+
+            <h2><strong>NOSSOS NÚMEROS DE IMPACTO SOCIAL</strong></h2>
+
+            <div class="projetos"></div>
+        </section>
+        <section id="counter" class="section-padding">
+            <div class="container text-center">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                        <h1 class="text-white fw-bold display-4">102</h1>
+                        <h6 class="text-uppercase fw-bold mb-0 text-white mt-3">Crianças e jovens</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                        <h1 class="text-white fw-bold display-4">37</h1>
+                        <h6 class="text-uppercase fw-bold mb-0 text-white mt-3">Famílias</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                        <h1 class="text-white fw-bold display-4">2</h1>
+                        <h6 class="text-uppercase fw-bold mb-0 text-white mt-3">Projetos</h6>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                        <h1 class="text-white fw-bold display-4">1</h1>
+                        <h6 class="text-uppercase fw-bold mb-0 text-white mt-3">Unidade</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="doe-agora">
+            <h2><strong>FAÇA A DIFERENÇA NA VIDA DAS CRIANÇAS!</strong></h2>
+
+            <section class="container">
+                <p class="text-center">Ajude a fazer a diferença na vida de crianças autistas 
+                doando para a ONG Espaço Azul. Sua contribuição oferece apoio vital e oportunidades para um 
+                futuro mais brilhante.</p>
+
+                <button class="fw-bold"><a href="doacao.html">DOE AGORA</a></button>
+            </section>
+        </div>  
+        <section class="container">
+
+            <h2><strong>MISSÃO</strong></h2>
+
+            <p>Nossa missão é oferecer <strong>atendimento especializado</strong> pautado na ciência ABA (Aplied Behavior Analysis- Análise do Comportamento Aplicada), 
+            na Integração Sensorial de Ayres que possibilitem ao nosso atendido uma maior qualidade de vida e autonomia. 
+            Aos familiares de pessoas autistas temos como missão a ampliação de sua rede de apoio, acolhimento psicológico e orientação parental.</p>
+
+            <h4 style="text-align: left;">1. Projeto Atendimento multiprofissional</h4>
+
+            <p>O projeto multiprofissional conta com atendimento especializado de uma equipe formada por: 
+            <i>terapeuta ocupacional, psicólogo, pedagogo, psicopedagogo, educador físico e fonoaudiólogo</i> que ofertam terapias
+            individuais e em grupo semanalmente que possibilitam que a criança e o jovem consigam desenvolver suas habilidades 
+            de forma personalizada e baseada em acompanhamento sistemático e minucioso versado pela ciência ABA.</p>
+
+            <h4 style="text-align: left;">2. Projeto QUEM CUIDA DE QUEM CUIDA</h4>
+
+            <p>O projeto tem como intuito ajudar a cuidar, ampliar a rede de apoio, acolher e informar familiares de pessoas com 
+            autismo para que consigam se cuidar para que tenham condições de cuidar de seus filhos.</p>
+
+            <p>Para que isso ocorra, o familiar tem atendimento psicológico individualizado e também acesso a um 
+            grupo de escuta presencial que ocorre de forma mensal na sede da instituição.</p>
+
+            <h2><strong>VALORES</strong></h2>
+
+            <p>Nosso trabalho é todo fundamentado em valores que norteiam o tempo todo a nossa forma de atuação. São eles: </p>
+                <p><strong style="color: rgb(0, 68, 255);">RESPEITO</strong></p>
+                <p><strong style="color: rgb(0, 68, 255);">ÉTICA</strong></p>
+                <p><strong style="color: rgb(0, 68, 255);">RESPONSABILIDADE</strong></p>
+                <p><strong style="color: rgb(0, 68, 255);">TRANSPARÊNCIA</strong></p>
+                <p><strong style="color: rgb(0, 68, 255);">DIVERSIDADE</strong></p>
+                <p><strong style="color: rgb(0, 68, 255);">EMPATIA</strong></p>
+
+            <h2><strong>DEPOIMENTOS</strong></h2>
+
+            <p class="text-center">Os depoimentos ressaltam a relevância do trabalho realizado pela ONG no âmbito familiar. Ao proporcionar oportunidades de integração, o Espaço Azul não só empodera seus beneficiários, mas também promove uma cultura de inclusão e respeito à diversidade.</p>
+            <div role="listbox" id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div aria-current="true" class="carousel-item active">
+                        <div class="card">
+                            <p>"É uma ONG com pessoas muito capacitadas e amam o que fazem, confio muito no trabalho deles"</p>
+                            <p class="author">- Graciele Prata</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <p>"O trabalho da Espaço Azul vai muito além do educacional. Eles criam um ambiente de inclusão e aceitação!"</p>
+                            <p class="author">- Marlete V. Santos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <p>"Como voluntária na Espaço Azul, testemunhei em primeira mão o impacto transformador que têm na vida das crianças com TEA"</p>
+                            <p class="author">- Franciele Lima</p>
+                        </div>
+                    </div>
+                </div>
+                <button aria-controls="carousel" class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button aria-controls="carousel" class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>            
+        <section class="container">
+            <div>
+                <h2><strong>PARCEIROS</strong></h2>
+                <p class="text-center">Os parceiros da ONG Espaço Azul desempenham um papel fundamental no apoio às crianças com TEA.
+                Sua colaboração não só melhora a vida das crianças atendidas, mas também inspira esperança e solidariedade.</p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <div id="carouselParceiros" class="carousel slide" data-bs-ride="carousel" role="listbox">
+                                <div class="carousel-indicators">
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Parceiro 1"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="1" aria-label="Parceiro 2"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="2" aria-label="Parceiro 3"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="3" aria-label="Parceiro 4"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="4" aria-label="Parceiro 5"></button>
+                                    <button type="button" role="option" data-bs-target="#carouselParceiros" data-bs-slide-to="5" aria-label="Parceiro 6"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/cardinali.png" class="d-block w-100 img-depoimentos" alt="Logo Imobiliária Cardinalli">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/prefeitura-sao-carlos.png" class="d-block w-100 img-depoimentos" alt="Logo Prefeitura de São Carlos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/faber.png" class="d-block w-100 img-depoimentos" alt="Logo Prefeitura de São Carlos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/jabu.png" class="d-block w-100 img-depoimentos" alt="Logo Prefeitura de São Carlos">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/mesa-brasil.png" class="d-block w-100 img-depoimentos" alt="Logo Prefeitura de São Carlos">
+                                    </div>
+                                </div>
+                                <button aria-controls="carousel" class="carousel-control-prev" type="button" data-bs-target="#carouselParceiros" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button aria-controls="carousel" class="carousel-control-next" type="button" data-bs-target="#carouselParceiros" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próximo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5 justify-content-evenly">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="line"></div>
+                        <ul class="social-icons">
+                            <li><img src="./img/email.png" alt="Ícone de e-mail" style="max-width: 40px; max-height: 40px;"> ongespacoazul@gmail.com</li>
+                            <li><img src="./img/telefone.png" alt="Ícone de telefone" style="max-width: 40px; max-height: 40px;"> +55 (16) 3371-6200</li>
+                            <li><a href="https://www.instagram.com/espacoazulsaocarlos/" target="_blank"><img src="./img/insta.png" alt="Ícone do Instagram" style="max-width: 40px; max-height: 40px;"></a> @espacoazulsaocarlos</li>
+                            <li><a href="https://maps.app.goo.gl/dX9S6YjQ4GaQ6GfM8" target="_blank"><img src="./img/localizacao.png" alt="Ícone de localização" style="max-width: 40px; max-height: 40px;"></a> R. Nove de Julho, 2595, Jd. Luftalla. São Carlos</li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="#"><img src="./img/logo2.png" alt="Logotipo do Espaço Azul" style="max-width: 200px; max-height: 200px;"></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center">
+
+                        <p class="justified">Somos uma Organização da Sociedade Civil sem fins lucrativos, que atua 
+                        oferecendo acolhimento às famílias de pessoas autistas e tratamento para as pessoas autistas 
+                        proporcionando desenvolvimento de habilidades e autonomia.</p>
+
+                        <p class="centered mb-0">Confira nossa <a href="" class="contrast">Política de Privacidade.</a></p>
+                    </div>          
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="mb-0">&copy; 2024 Espaço Azul. Todos os direitos reservados.</p>      
+        </div>
+    </footer>   
+    <script src="./js/contraste.js"></script>
+    <script src="./js/botao-fonte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
